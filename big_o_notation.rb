@@ -73,6 +73,19 @@ end
 # puts fibonacci(20)
 # puts fibonacci(40)
 
+# o(n!) factorial time
+def factorial(n)
+  if n == 0
+    puts "I went around again!"
+    return 1
+  else
+    puts "I went around again!"
+    return n*factorial(n-1)
+  end
+end
+
+puts factorial(3)
+
 # o(log n) Logarithmic Time
 def binary_search(array, value)
   first = 0
